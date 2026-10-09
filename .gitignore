@@ -3,8 +3,8 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Teacher data and local training artifacts are not submission source files.
-data/
+# Generated data splits and local training artifacts are not submission source files.
+data/splits/
 models/
 logs/
 requirements-lock.txt

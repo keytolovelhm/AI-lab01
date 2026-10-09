@@ -14,7 +14,7 @@ if (-not $PythonExe) {
 }
 foreach ($dataName in @("train_data.csv", "test_data_unlabeled.csv")) {
     if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot "data\raw\$dataName"))) {
-        throw "缺少教师数据 data\raw\$dataName。数据不随仓库发布，请按 README 放置原始 CSV。"
+        throw "缺少教师数据 data\raw\$dataName。请确认仓库文件已完整下载。"
     }
 }
 
