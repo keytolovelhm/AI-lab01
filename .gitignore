@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Teacher data and local training artifacts are not submission source files.
+data/
+models/
+logs/
+requirements-lock.txt
+RESULTS_SUMMARY.md
+
+# Submit the experiment report separately, not to this code repository.
+report.md
+report.pdf
+report.docx
+.idea/
+.vscode/
