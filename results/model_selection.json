@@ -1,0 +1,25 @@
+{
+  "feature_config": "tuned_word_tfidf",
+  "internal_test_was_untouched_until_after_lock": true,
+  "model": "linear_svm",
+  "model_display_name": "Linear SVM (LinearSVC)",
+  "parameter_name": "C",
+  "parameter_value": 1.0,
+  "selected_experiment_id": "tuned_word_tfidf__linear_svm__C_1p0",
+  "selected_using_validation_only": true,
+  "selection_metric": "val_macro_f1",
+  "tie_breakers": [
+    "val_accuracy",
+    "val_weighted_f1",
+    "lower_total_seconds"
+  ],
+  "validation_metrics": {
+    "accuracy": 0.9520795660036167,
+    "macro_f1": 0.9520371947219367,
+    "macro_precision": 0.9526480151214152,
+    "macro_recall": 0.9522098195836728,
+    "weighted_f1": 0.9519707705514843,
+    "weighted_precision": 0.9526437633305999,
+    "weighted_recall": 0.9520795660036167
+  }
+}

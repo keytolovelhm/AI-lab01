@@ -1,0 +1,15 @@
+[PASS] required_files: missing=[]
+[PASS] python_compilation: all src/*.py compiled
+[PASS] cleaned_ablation_normalization: custom cleaner explicitly preserves lowercase=True and strip_accents=unicode semantics
+[PASS] split_disjoint: overlap_count=0
+[PASS] split_complete: union_rows=7368 raw_rows=7368
+[PASS] experiment_count: actual=27 expected=27
+[PASS] selection_recomputed_from_validation: recomputed=tuned_word_tfidf__linear_svm__C_1p0 stored=tuned_word_tfidf__linear_svm__C_1p0
+[PASS] test_lock_policy_recorded: validation-only selection flags
+[PASS] prediction_one_column: shape=(2457, 1)
+[PASS] prediction_row_count: predictions=2457 external=2457
+[PASS] prediction_integer_labels: unique=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[PASS] prediction_no_header: first_line=4
+[PASS] saved_model_reproduces_submission: model predictions exactly match submission
+[PASS] raw_train_hash: raw train copy unchanged
+[PASS] raw_external_hash: raw external test copy unchanged

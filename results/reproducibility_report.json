@@ -1,0 +1,82 @@
+{
+  "comparisons": [
+    {
+      "baseline": {
+        "accuracy": 0.9321880650994575,
+        "macro_f1": 0.9327863647987467,
+        "macro_precision": 0.9340306761666515,
+        "macro_recall": 0.9322653954493578,
+        "weighted_f1": 0.9326705381075712,
+        "weighted_precision": 0.9338778830514988,
+        "weighted_recall": 0.9321880650994575
+      },
+      "item": "internal_test_metrics",
+      "passed": true,
+      "rerun": {
+        "accuracy": 0.9321880650994575,
+        "macro_f1": 0.9327863647987467,
+        "macro_precision": 0.9340306761666515,
+        "macro_recall": 0.9322653954493578,
+        "weighted_f1": 0.9326705381075712,
+        "weighted_precision": 0.9338778830514988,
+        "weighted_recall": 0.9321880650994575
+      }
+    },
+    {
+      "baseline": "592e58ca38303f7441492581752b06aaafbfbeaf2fe59fd948ff0c6b7a807067",
+      "item": "predictions_sha256",
+      "passed": true,
+      "rerun": "592e58ca38303f7441492581752b06aaafbfbeaf2fe59fd948ff0c6b7a807067"
+    },
+    {
+      "baseline": "tuned_word_tfidf__linear_svm__C_1p0",
+      "item": "selected_experiment_id",
+      "passed": true,
+      "rerun": "tuned_word_tfidf__linear_svm__C_1p0"
+    },
+    {
+      "baseline": {
+        "internal_test": "1070ef6c2c38c82904dbcf3413fdaeeed124e9e43329f032080bc8a4ab7f67e0",
+        "train": "3ab0311bc499d002d65b7f0069690cef7879c670d958a0e3b7ceaf35ddcef545",
+        "validation": "7854cf1a6e2ca04105f35d85120efb9bed335f7b8b298beede05419a76e54172"
+      },
+      "item": "split_hashes",
+      "passed": true,
+      "rerun": {
+        "internal_test": "1070ef6c2c38c82904dbcf3413fdaeeed124e9e43329f032080bc8a4ab7f67e0",
+        "train": "3ab0311bc499d002d65b7f0069690cef7879c670d958a0e3b7ceaf35ddcef545",
+        "validation": "7854cf1a6e2ca04105f35d85120efb9bed335f7b8b298beede05419a76e54172"
+      }
+    },
+    {
+      "baseline": {
+        "accuracy": 0.9520795660036167,
+        "macro_f1": 0.9520371947219367,
+        "macro_precision": 0.9526480151214152,
+        "macro_recall": 0.9522098195836728,
+        "weighted_f1": 0.9519707705514843,
+        "weighted_precision": 0.9526437633305999,
+        "weighted_recall": 0.9520795660036167
+      },
+      "item": "validation_metrics",
+      "passed": true,
+      "rerun": {
+        "accuracy": 0.9520795660036167,
+        "macro_f1": 0.9520371947219367,
+        "macro_precision": 0.9526480151214152,
+        "macro_recall": 0.9522098195836728,
+        "weighted_f1": 0.9519707705514843,
+        "weighted_precision": 0.9526437633305999,
+        "weighted_recall": 0.9520795660036167
+      }
+    },
+    {
+      "baseline": "cdfea23a9962ff9be9fd5bb7c3f6c9d5a0629bd9db0bfec05205ae6989715c30",
+      "item": "validation_table_sha256",
+      "passed": true,
+      "rerun": "cdfea23a9962ff9be9fd5bb7c3f6c9d5a0629bd9db0bfec05205ae6989715c30"
+    }
+  ],
+  "passed": true,
+  "purpose": "Compare deterministic splits, all validation metrics, locked test metrics and final predictions across two full runs."
+}
