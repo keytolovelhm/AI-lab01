@@ -1,0 +1,68 @@
+{
+  "project_name": "人工智能实验一：文本分类",
+  "random_seed": 42,
+  "validation_split_seed": 43,
+  "split_ratios": {
+    "train": 0.70,
+    "validation": 0.15,
+    "internal_test": 0.15
+  },
+  "selection_metric": "val_macro_f1",
+  "feature_configs": {
+    "teacher_baseline": {
+      "description": "教师示例基线：原始文本、词 unigram、最多 5000 维",
+      "preprocessor": "identity",
+      "analyzer": "word",
+      "ngram_range": [1, 1],
+      "max_features": 5000,
+      "min_df": 1,
+      "max_df": 1.0,
+      "sublinear_tf": false,
+      "strip_accents": null,
+      "lowercase": true
+    },
+    "tuned_word_tfidf": {
+      "description": "创新对照一：原始文本、词 unigram+bigram、频率过滤与 sublinear TF",
+      "preprocessor": "identity",
+      "analyzer": "word",
+      "ngram_range": [1, 2],
+      "max_features": 30000,
+      "min_df": 2,
+      "max_df": 0.95,
+      "sublinear_tf": true,
+      "strip_accents": "unicode",
+      "lowercase": true
+    },
+    "cleaned_tuned_word_tfidf": {
+      "description": "创新对照二：在 tuned_word_tfidf 基础上移除邮件元数据、引用行、网址和邮箱",
+      "preprocessor": "newsgroup_clean",
+      "analyzer": "word",
+      "ngram_range": [1, 2],
+      "max_features": 30000,
+      "min_df": 2,
+      "max_df": 0.95,
+      "sublinear_tf": true,
+      "strip_accents": "unicode",
+      "lowercase": true
+    }
+  },
+  "models": {
+    "multinomial_nb": {
+      "display_name": "Multinomial Naive Bayes",
+      "parameter_name": "alpha",
+      "values": [0.1, 0.5, 1.0]
+    },
+    "logistic_regression": {
+      "display_name": "Logistic Regression",
+      "parameter_name": "C",
+      "values": [0.1, 1.0, 10.0],
+      "max_iter": 2000
+    },
+    "linear_svm": {
+      "display_name": "Linear SVM (LinearSVC)",
+      "parameter_name": "C",
+      "values": [0.1, 1.0, 10.0],
+      "max_iter": 5000
+    }
+  }
+}
